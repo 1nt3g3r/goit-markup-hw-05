@@ -73,6 +73,10 @@ ul, ol {
     position: relative;
 }
 
+.item.nav-active-link a {
+    color: var(--accent);
+}
+
 .nav-active-link::after {
     content: '';
     position: absolute;
@@ -683,10 +687,11 @@ body {
 
 .image-wrapper {
     position: relative;
+    overflow: hidden;
 }
 
 .work-list .item:hover .image-card-top-text {
-    transform: scaleY(1) translateX(-1px) translateY(-1px);
+    transform: translateY(0%) translateX(-1px) translateY(-1px);
 }
 
 .image-card-top-text {
@@ -712,7 +717,7 @@ body {
     background-color: rgba(33, 150, 243, 0.9);
     color: #FFFFFF;
 
-    transform: scaleY(0) translateX(-1px) translateY(-1px);
+    transform: translateY(100%) translateX(-1px) translateY(-1px);
     transform-origin: 50% 100%;
 
     transition-property: transform;
